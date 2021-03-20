@@ -7,5 +7,6 @@ Created on Sat Mar 20 11:30:01 2021
 
 from main.game import *
 
-def test_callToGet_Score():
-    get_score()
+def test_startOfGame():
+    result = get_score()
+    assert result == "love-All"

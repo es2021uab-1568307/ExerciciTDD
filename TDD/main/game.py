@@ -6,4 +6,4 @@ Created on Sat Mar 20 10:32:15 2021
 """
 
 def get_score():
-    pass
+    return "love-All"
