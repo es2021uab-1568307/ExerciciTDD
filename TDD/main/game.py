@@ -29,10 +29,13 @@ class game:
             return "Thirty-Love"
         if player1.points == 3:
             return "Forty-Love"
-        if player1.points == 0 and player2.points == 1:
+        if player2.points == 1 and player1.points == 0:
             return "Love-Fifteen"
         if player2.points == 2:
             return "Love-Thirty"
+        if player2.points == 3:
+            return "Love-Forty"
+
 
     
 
