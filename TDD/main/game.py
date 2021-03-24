@@ -56,6 +56,8 @@ class game:
         if player1.points == 1:
             if player2.points == 2:
                 return "Fifteen-Thirty";
+            if player2.points == 3:
+                return "Fifteen-Forty";
 
 
 
