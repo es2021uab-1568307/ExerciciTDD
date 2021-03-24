@@ -39,6 +39,8 @@ class game:
         if player2.points == 1:
             if player1.points == 2:
                 return "Thirty-Fifteen";
+            if player1.points == 3:
+                return "Forty-Fifteen";
 
         """------PUNTS WIN PLAYER 2-----------"""
         if player1.points == 0:
