@@ -25,10 +25,12 @@ class game:
             return "Deuce"
         if player1.points == 1 and player2.points == 0:
             return "Fifteen-Love"
-        if player1.points == 0 and player2.points == 1:
-            return "Love-Fifteen"
         if player1.points == 2:
             return "Thirty-Love"
+        if player1.points == 0 and player2.points == 1:
+            return "Love-Fifteen"
+        if player2.points == 2:
+            return "Love-Thirty"
 
     
 
