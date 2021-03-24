@@ -35,7 +35,8 @@ def teardown():
     (2, 1, "Thirty-Fifteen"),
     (1, 2, "Fifteen-Thirty"),
     (3, 1, "Forty-Fifteen"),
-    (1, 3, "Fifteen-Forty")
+    (1, 3, "Fifteen-Forty"),
+    (4, 1, "Win for player1")
 ])
 
 
@@ -65,7 +66,7 @@ def test_startOfGame(setup,score_player_1, score_player_2, expected_result):
     (1, 2, "Fifteen-Thirty") +
     (3, 1, "Forty-Fifteen") +
     (1, 3, "Fifteen-Forty") +
-    (4, 1, "Win for player1")
+    (4, 1, "Win for player1") +
     (1, 4, "Win for player2")
     (3, 2, "Forty-Thirty")
     (2, 3, "Thirty-Forty")
