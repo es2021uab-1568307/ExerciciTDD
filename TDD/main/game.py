@@ -10,17 +10,19 @@ class player:
         self._name = name
         self._points = 0
     
-    def wins_point(self, player: str):
+    def wins_point(self, player) -> str:
         self._points += 1
-        
+
+class game:
     def get_score(player1, player2) -> str:
-        if player1._points == 1 and player2._points == 0:
-            return "fifteen-love"
-        if player1._points == 2:
-            return "thirty-love"
-        if player2._points == 1:
-            return "fifteen-all"
-        return "love-all"
+
+        if player1.points == 1 and player2.points == 0:
+            return "Fifteen-Love"
+        if player1.points == 2:
+            return "Thirty-Love"
+        if player2.points == 1:
+            return "Fifteen-All"
+        return "Love-All"
 
     
 
