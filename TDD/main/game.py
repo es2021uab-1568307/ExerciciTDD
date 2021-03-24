@@ -67,6 +67,9 @@ class game:
             if player2.points == 4:
                 return "Win for player2"
 
+        if player1.points == 2:
+            if player2.points == 3:
+                return "Thirty-Forty"
 
 
     
