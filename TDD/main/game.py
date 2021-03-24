@@ -26,22 +26,31 @@ class game:
             return "Deuce"
 
         """------PUNTS WIN PLAYER 1-----------"""
-        if player1.points == 1 and player2.points == 0:
-            return "Fifteen-Love"
-        if player1.points == 2:
-            return "Thirty-Love"
-        if player1.points == 3:
-            return "Forty-Love"
-        if player1.points == 4:
-            return "Win for player1"
+        if player2.points == 0:
+            if player1.points == 1:
+                return "Fifteen-Love"
+            if player1.points == 2:
+                return "Thirty-Love"
+            if player1.points == 3:
+                return "Forty-Love"
+            if player1.points == 4:
+                return "Win for player1"
+
+        if player2.points == 1:
+            if player1.points == 2:
+                return "Thirty-Fifteen";
 
         """------PUNTS WIN PLAYER 2-----------"""
-        if player2.points == 1 and player1.points == 0:
-            return "Love-Fifteen"
-        if player2.points == 2:
-            return "Love-Thirty"
-        if player2.points == 3:
-            return "Love-Forty"
+        if player1.points == 0:
+            if player2.points == 1:
+                return "Love-Fifteen"
+            if player2.points == 2:
+                return "Love-Thirty"
+            if player2.points == 3:
+                return "Love-Forty"
+            if player2.points == 4:
+                return "Win for player2"
+
 
 
     

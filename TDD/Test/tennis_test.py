@@ -30,7 +30,9 @@ def teardown():
     (0, 2, "Love-Thirty"),
     (3, 0, "Forty-Love"),
     (0, 3, "Love-Forty"),
-    (4, 0, "Win for player1")
+    (4, 0, "Win for player1"),
+    (0, 4, "Win for player2"),
+    (2, 1, "Thirty-Fifteen")
 ])
 
 
@@ -45,18 +47,18 @@ def test_startOfGame(setup,score_player_1, score_player_2, expected_result):
 """
     (0, 0, "Love-All") +
     (1, 1, "Fifteen-All") +
-        (1, 0, "Fifteen-Love") +
-        (2, 0, "Thirty-Love") +
-        (2, 2, "Thirty-All") +
-        (3, 3, "Deuce") +
-        (4, 4, "Deuce") +
-        (0, 1, "Love-Fifteen") +
-        (0, 2, "Love-Thirty") +
-        (3, 0, "Forty-Love") +
-        (0, 3, "Love-Forty") +
-        (4, 0, "Win for player1") +
-    (0, 4, "Win for player2")
-    (2, 1, "Thirty-Fifteen")
+    (1, 0, "Fifteen-Love") +
+    (2, 0, "Thirty-Love") +
+    (2, 2, "Thirty-All") +
+    (3, 3, "Deuce") +
+    (4, 4, "Deuce") +
+    (0, 1, "Love-Fifteen") +
+    (0, 2, "Love-Thirty") +
+    (3, 0, "Forty-Love") +
+    (0, 3, "Love-Forty") +
+    (4, 0, "Win for player1") +
+    (0, 4, "Win for player2") +
+    (2, 1, "Thirty-Fifteen") +
     (1, 2, "Fifteen-Thirty")
     (3, 1, "Forty-Fifteen")
     (1, 3, "Fifteen-Forty")
