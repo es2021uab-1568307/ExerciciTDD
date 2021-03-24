@@ -37,7 +37,8 @@ def teardown():
     (3, 1, "Forty-Fifteen"),
     (1, 3, "Fifteen-Forty"),
     (4, 1, "Win for player1"),
-    (1, 4, "Win for player2")
+    (1, 4, "Win for player2"),
+    (3, 2, "Forty-Thirty")
 ])
 
 
