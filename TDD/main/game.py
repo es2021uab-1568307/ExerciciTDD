@@ -50,6 +50,10 @@ class game:
             if player1.points == 4:
                 return "Win for player1"
 
+        if player2.points == 3:
+            if player1.points == 4:
+                return "Advantage player1"
+
         """------PUNTS WIN PLAYER 2-----------"""
         if player1.points == 0:
             if player2.points == 1:
