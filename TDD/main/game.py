@@ -15,6 +15,7 @@ class player:
 
 class game:
     def get_score(player1, player2) -> str:
+        """------PUNTS EMPATATS-----------"""
         if player1.points == player2.points:
             if player1.points == 2:
                 return "Thirty-All"
@@ -23,12 +24,18 @@ class game:
             if player1.points == 0:
                 return "Love-All"
             return "Deuce"
+
+        """------PUNTS WIN PLAYER 1-----------"""
         if player1.points == 1 and player2.points == 0:
             return "Fifteen-Love"
         if player1.points == 2:
             return "Thirty-Love"
         if player1.points == 3:
             return "Forty-Love"
+        if player1.points == 4:
+            return "Win for player1"
+
+        """------PUNTS WIN PLAYER 2-----------"""
         if player2.points == 1 and player1.points == 0:
             return "Love-Fifteen"
         if player2.points == 2:
