@@ -53,6 +53,8 @@ class game:
         if player2.points >= 3:
             if player1.points - player2.points == 1:
                 return "Advantage player1"
+            if player1.points - player2.points == 2:
+                return "Win for player1"
 
         """------PUNTS WIN PLAYER 2-----------"""
         if player1.points == 0:
@@ -82,6 +84,7 @@ class game:
         if player1.points >= 3:
             if player2.points - player1.points == 1:
                 return "Advantage player2"
+
 
     
 
