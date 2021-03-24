@@ -6,14 +6,18 @@ Created on Sat Mar 20 10:32:15 2021
 """
 
 class player:
-    def __init__(self, name):
+    def __init__(self, name:str):
         self._name = name
         self._points = 0
     
     def wins_point(self, player: str):
         self._points += 1
         
-    def get_score(player1, player2) -> str:
+    def setPoints(self, _points: int):
+        self._points = _points
+        
+class game:    
+    def get_score(player1, player2):
         if player1._points == 1 and player2._points == 0:
             return "fifteen-love"
         if player1._points == 2:
@@ -23,4 +27,3 @@ class player:
         return "love-all"
 
     
-

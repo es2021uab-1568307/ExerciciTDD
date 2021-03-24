@@ -9,41 +9,29 @@ import pytest
 from main.game import *
 
 @pytest.fixture()
-def setup() -> player:
-    return player1("Toni"),player2("Carla")
+def setup():
+    player1=player("Toni")
+    player2=player("Carla")
+    return player1, player2
+@pytest.fixture()
+def setup2() -> player:
+    return player("Carla")
 @pytest.fixture()
 def teardown():
     return
 
 @pytest.mark.parametrize("score_player_1, score_player_2, expected_result", [
-    (0, 0, "love-all")]
+    (0, 0, "love-all"),
+    (1,0, "fifteen-love"),
+    (2,0, "thirty-love"),
+    (1,1, "fifteen-all")]
     )
-def test_startOfGame(setup):
+def test_Game(setup, score_player_1, score_player_2, expected_result):
+    player1=setup[0]
+    player2=setup[1]
 
-    result = get_score()
-    assert result == "love-all"
+    player1._points=score_player_1
+    player2._points=score_player_2
+    result = game.get_score(player1,player2)
+    assert result == expected_result
     
-def test_fifteenAll_afterPlayer1Scores(setup):
-    game = setup
-    
-    game.wins_point("Toni")
-    result = game.get_score()
-    assert result == "fifteen-love"
-    
-def test_Player1AndPlayer2onePoint_fifteenAll(setup):
-    game = setup
-    
-    game.wins_point("Toni")
-    game.wins_point("Carla")
-    result = game.get_score()
-    
-    assert result == "fifteen-all"
-    
-def test_Player1TwoPoints_thirtyLove(setup):
-    game = setup()
-    
-    game.wins_point("Toni")
-    game.wins_point("Toni")
-    result = game.get_score()
-    
-    assert result == "thirty-love"
