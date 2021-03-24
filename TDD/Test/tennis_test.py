@@ -40,7 +40,8 @@ def teardown():
     (1, 4, "Win for player2"),
     (3, 2, "Forty-Thirty"),
     (2, 3, "Thirty-Forty"),
-    (4, 2, "Win for player1")
+    (4, 2, "Win for player1"),
+    (2, 4, "Win for player2")
 ])
 
 
@@ -51,6 +52,7 @@ def test_startOfGame(setup,score_player_1, score_player_2, expected_result):
     player2.points = score_player_2
     result = game.get_score(player1, player2)
     assert result == expected_result
+
 
 """
     (0, 0, "Love-All") +
@@ -75,7 +77,7 @@ def test_startOfGame(setup,score_player_1, score_player_2, expected_result):
     (3, 2, "Forty-Thirty") + 
     (2, 3, "Thirty-Forty") +
     (4, 2, "Win for player1") +
-    (2, 4, "Win for player2")
+    (2, 4, "Win for player2") +
     (4, 3, "Advantage player1")
     (3, 4, "Advantage player2")
     (5, 4, "Advantage player1")
