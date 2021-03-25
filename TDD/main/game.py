@@ -2,7 +2,7 @@
 """
 Created on Sat Mar 20 10:32:15 2021
 
-@author: borja
+@author: 432-5
 """
 
 class player:
@@ -12,8 +12,8 @@ class player:
     
     def wins_point(self, player) -> str:
         self._points += 1
-
-class game:
+        
+class game:    
     def get_score(player1, player2) -> str:
 
         """------PUNTS WIN PLAYER 1-----------"""
@@ -75,4 +75,3 @@ class game:
             return "Love-All"
         return "Deuce"
     
-
